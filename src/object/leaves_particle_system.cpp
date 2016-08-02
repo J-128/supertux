@@ -60,12 +60,24 @@ LeavesParticleSystem::~LeavesParticleSystem()
 
 void LeavesParticleSystem::init()
 {
-  leavesimages[0] = Surface::create("images/objects/particles/leaf5.png");
-  leavesimages[1] = Surface::create("images/objects/particles/leaf4.png");
-  leavesimages[2] = Surface::create("images/objects/particles/leaf3.png");
-  leavesimages[3] = Surface::create("images/objects/particles/leaf2.png");
-  leavesimages[4] = Surface::create("images/objects/particles/leaf1.png");
-  leavesimages[5] = Surface::create("images/objects/particles/leaf0.png");
+  leavesimages[0] = Surface::create("images/objects/particles/leaf17.png");
+  leavesimages[1] = Surface::create("images/objects/particles/leaf16.png");
+  leavesimages[2] = Surface::create("images/objects/particles/leaf15.png");
+  leavesimages[3] = Surface::create("images/objects/particles/leaf14.png");
+  leavesimages[4] = Surface::create("images/objects/particles/leaf13.png");
+  leavesimages[5] = Surface::create("images/objects/particles/leaf12.png");
+  leavesimages[6] = Surface::create("images/objects/particles/leaf11.png");
+  leavesimages[7] = Surface::create("images/objects/particles/leaf10.png");
+  leavesimages[8] = Surface::create("images/objects/particles/leaf9.png");
+  leavesimages[9] = Surface::create("images/objects/particles/leaf8.png");
+  leavesimages[10] = Surface::create("images/objects/particles/leaf7.png");
+  leavesimages[11] = Surface::create("images/objects/particles/leaf6.png");
+  leavesimages[12] = Surface::create("images/objects/particles/leaf5.png");
+  leavesimages[13] = Surface::create("images/objects/particles/leaf4.png");
+  leavesimages[14] = Surface::create("images/objects/particles/leaf3.png");
+  leavesimages[15] = Surface::create("images/objects/particles/leaf2.png");
+  leavesimages[16] = Surface::create("images/objects/particles/leaf1.png");
+  leavesimages[17] = Surface::create("images/objects/particles/leaf0.png");
 
   virtual_width = SCREEN_WIDTH * 2;
 
@@ -75,7 +87,7 @@ void LeavesParticleSystem::init()
   size_t leafcount = size_t(virtual_width/10.0);
   for(size_t i=0; i<leafcount; ++i) {
     auto particle = std::unique_ptr<LeavesParticle>(new LeavesParticle);
-    int leavessize = graphicsRandom.rand(6);
+    int leavessize = graphicsRandom.rand(18);
 
     particle->pos.x = graphicsRandom.randf(virtual_width);
     particle->pos.y = graphicsRandom.randf(SCREEN_HEIGHT);

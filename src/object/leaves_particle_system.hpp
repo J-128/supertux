@@ -92,7 +92,7 @@ private:
   // Current blowing velocity of gust
         gust_current_velocity;
 
-  SurfacePtr leavesimages[6];
+  SurfacePtr leavesimages[18];
 
 private:
   LeavesParticleSystem(const LeavesParticleSystem&);

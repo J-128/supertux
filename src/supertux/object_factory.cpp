@@ -149,6 +149,9 @@
 #include "object/skull_tile.hpp"
 #include "object/smoke_cloud.hpp"
 #include "object/snow_particle_system.hpp"
+//my edit
+#include "object/leaves_particle_system.hpp"
+//
 #include "object/specialriser.hpp"
 #include "object/spotlight.hpp"
 #include "object/sprite_particle.hpp"
@@ -276,6 +279,9 @@ ObjectFactory::init_factories()
   add_factory<ScriptedObject>("scriptedobject");
   add_factory<SkullTile>("skull_tile");
   add_factory<SnowParticleSystem>("particles-snow");
+  //my edit
+  add_factory<LeavesParticleSystem>("particles-leaves");
+  //
   add_factory<Spotlight>("spotlight");
   add_factory<Thunderstorm>("thunderstorm");
   add_factory<Torch>("torch");
